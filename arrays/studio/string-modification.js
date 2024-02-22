@@ -2,7 +2,8 @@ const input = require('readline-sync');
 let str = "LaunchCode";
 
 //1) Use string methods to remove the first three characters from the string and add them to the end.
-let newStr = str.slice(0,2)+str.slice
+let newStr =str.slice(3) + str.slice(0,3)
+console.log(newStr);
 //Hint - define another variable to hold the new string or reassign the new string to str.
 
 //Use a template literal to print the original and modified string in a descriptive phrase.

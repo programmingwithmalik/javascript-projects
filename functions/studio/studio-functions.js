@@ -3,6 +3,17 @@
 // Part One: Reverse Characters
 
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
+function reverseCharacters(input){
+if (typeof input ==="number"){
+let reversedString=input.toString().split('').reverse("").join("");
+} else
+return input.split('').reverse().join('');
+
+}
+
+let myVariableName = "Hello World!";
+
+console.log(reverseCharacters(myVariableName));
 // 2. Within the function, split the string into an array, then reverse the array.
 // 3. Use join to create the reversed string and return that string from the function.
 // 4. Below the function, define and initialize a variable to hold a string.
@@ -18,7 +29,13 @@
 // 5. Be sure to print the result returned by the function to verify that your code works for both strings and numbers. Do this before moving on to the next exercise.
 
 // Part Three: Complete Reversal
-
+function completeReversal(arrayInput){
+    let emptyArray=[];
+    for (arrayInput[i]=0; i<arrayInput.length; i++){
+        reverseCharacters(arrayInput[i]).push(emptyArray);
+    }
+    return emptyArray;
+}
 // 1. Define and initialize an empty array.
 // 2. Loop through the old array.
 // 3. For each element in the old array, call reverseCharacters to flip the characters or digits.

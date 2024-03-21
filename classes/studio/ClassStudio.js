@@ -43,7 +43,6 @@ class CrewCandidate{
       return "Rejected!"
     }
 
-
   }
 }
 

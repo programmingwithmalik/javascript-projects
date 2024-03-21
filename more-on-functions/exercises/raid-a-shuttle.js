@@ -24,6 +24,23 @@ let cargoHold = ['meal kits', 'space suits', 'first-aid kit', 'satellite', 'gold
 console.log("Fuel level: " + checkFuel(fuelLevel));
 console.log("Hold status: " + holdStatus(cargoHold));
 
+let nonSuspiciousFunction = function(a) {
+   if (checkFuel(a) === 'green') {
+      return a - 100001;
+   }
+   else if (checkFuel(a) === 'yellow') {
+      return a - 50001;
+   }
+   else {
+      return a;
+   }
+};
+
+let irs = function(levelOfFuel, itemsInCargo {
+   let arr = deckMops(itemsInCargo);
+   return `Raided ${nonSuspiciousFunction(fuelLevel)} kg of fuel from the tanks, and stole ${arr[0]} and ${arr[1]} from the cargo hold.`
+}
+
 /* Steal some fuel from the shuttle:
  * /
  
